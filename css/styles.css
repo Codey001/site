@@ -26,10 +26,11 @@ li {
 a {
     text-decoration: none;
 }
+.header{
+    border-bottom: 1px solid #101010;
+}
 
-.navbar {
-    background: rgb(189,250,62);
-    background: linear-gradient(180deg, rgba(189,250,62,0.5116247182466737) 0%, rgba(253,187,45,0) 100%); 
+.navbar { 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,9 +72,7 @@ a {
 }
 
 .nav-logo {
-    font-size: 2.1rem;
-    font-weight: 500;
-    color: #ED13EA;
+    width: 200px;
 }
 
 .profile{
@@ -91,8 +90,7 @@ a {
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
     .nav-menu.active {

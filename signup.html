@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+
+<body>
+    <div class="container home-container">
+
+        <form id="signup" class="form" type="submit"  action="./index.html">
+            <div class="signin">
+                <div class="form-field">
+                    <Label for="firstName">First name </Label>
+                    <input type="text" name="firstName" id="firstName" placeholder="first name" autocomplete="off">
+                    <small></small>
+                </div>
+                <div class="form-field">
+                    <Label for="lastName">Last name </Label>
+                    <input type="text" name="lastName" id="lastName" placeholder="last name" autocomplete="off">
+                    <small></small>
+                </div>
+
+                <div class="form-field"><label for="userName">User name</label>
+                    <input type="text" name="userName" id="userName" placeholder="user name" autocomplete="off">
+                    <small></small>
+                </div>
+                <div class="form-field"><Label for="email">Email Id </Label>
+                    <input type="email" name="email" id="email" placeholder="name@domain.country" autocomplete="off">
+                    <small></small>
+                </div>
+                <div class="form-field">
+                    <label for="password"> Password </Label>
+                    <input type="password" name="password" id="password" placeholder="********" autocomplete="off">
+                    <small></small>
+                </div>
+                <div class="form-field"><Label for="confirm-password">Confirm Password </Label>
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder="********" autocomplete="off">
+                    <small></small>
+                </div>
+                <p>If you already had a account? <a href="#login">Login</a></p>
+                <button type="submit">Sign up</button>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="./js/submit.js"></script>
+</body>
+
+</html>

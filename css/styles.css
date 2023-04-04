@@ -118,4 +118,258 @@ a {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+/* Main content */
+.main-content {
+    width: 100%;
+    display: inline-block;
+    background: #333;
+    height: 50vh;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+  }
 
+  /* footer */
+  
+  .footer {
+    background: #e8e8e8;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+  }
+  
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  /* Footer left */
+  
+  .footer .footer-left {
+    width: 40%;
+  }
+  
+  /* The company logo */
+  
+  /* Footer links */
+  
+  .footer .footer-links {
+    color: #ffbb00;
+    margin: 20px 0 12px;
+    padding: 0;
+  }
+  
+  .footer .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Footer Center */
+  
+  .footer .footer-center {
+    width: 35%;
+  }
+  
+  .footer .footer-center i {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+  
+  .footer .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+  }
+  
+  .footer .footer-center p {
+    display: inline-block;
+    color: blue;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0;
+  }
+  
+  .footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  .footer .footer-links a:before {
+    content: "|";
+    font-weight: 300;
+    font-size: 20px;
+    left: 0;
+    color: #000000;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer .footer-links .link-1:before {
+    content: none;
+  }
+  
+  /* Footer Right */
+  
+  .footer .footer-right {
+    width: 20%;
+  }
+  
+  .footer .footer-company-about {
+    line-height: 20px;
+    color: #040404;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer .social-button {
+    margin-top: 25px;
+  }
+  
+  /* If you don't want the footer to be responsive, remove these media queries */
+  
+  @media (max-width: 880px) {
+    .footer {
+      font: bold 14px sans-serif;
+    }
+  
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  
+    .footer .footer-center i {
+      margin-left: 0;
+    }
+}
+
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .social-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    border-radius: 100%;
+    background: #fff;
+    text-align: center;
+  }
+  .social-button::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    transition: 0.3s;
+  }
+  .social-button:focus, .social-button:hover {
+    color: #fff;
+  }
+  .social-button:focus::after, .social-button:hover::after {
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    margin-left: calc(-50% - 1px);
+  }
+  .social-button i,
+  .social-button svg {
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+  }
+  .social-button i {
+    font-size: 25.6px;
+  }
+  .social-button svg {
+    height: 40%;
+    width: 40%;
+  }
+  .social-button--mail {
+    color: #0072c6;
+  }
+  .social-button--mail::after {
+    background: #0072c6;
+  }
+  .social-button--facebook {
+    color: #3b5999;
+  }
+  .social-button--facebook::after {
+    background: #3b5999;
+  }
+  .social-button--linkedin {
+    color: #0077b5;
+  }
+  .social-button--linkedin::after {
+    background: #0077b5;
+  }
+  .social-button--youtube {
+    color: #e4402f;
+  }
+  .social-button--youtube::after {
+    background: #e4402f;
+  }
+  .social-button--github {
+    color: #6e5494;
+  }
+  .social-button--github::after {
+    background: #6e5494;
+  }
+  .social-button--snapchat {
+    color: #eec900;
+  }
+  .social-button--snapchat::after {
+    background: #eec900;
+  }
+  .social-button--twitter {
+    color: #55acee;
+  }
+  .social-button--twitter::after {
+    background: #55acee;
+  }
+  .social-button--instagram {
+    color: #e4405f;
+  }
+  .social-button--instagram::after {
+    background: #e4405f;
+  }

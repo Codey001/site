@@ -1,9 +1,10 @@
-temp{
+temp {
     color: #BDFA3E;
     color: #DB7A12;
     color: #ED13EA;
     color: #066AD6;
     color: #19BF19;
+    color: #F3CD20;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
@@ -26,11 +27,12 @@ li {
 a {
     text-decoration: none;
 }
-.header{
+
+.header {
     border-bottom: 1px solid #101010;
 }
 
-.navbar { 
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,13 +63,13 @@ a {
     margin-left: 5rem;
 }
 
-.nav-link{
+.nav-link {
     font-size: 1.6rem;
     font-weight: 400;
     color: #19BF19;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #DB7A12;
 }
 
@@ -75,7 +77,7 @@ a {
     width: 200px;
 }
 
-.profile{
+.profile {
     width: 40%;
 }
 
@@ -119,3 +121,96 @@ a {
     }
 }
 
+.landing{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #101010;
+    font-size: 100px;
+}
+
+#aboutMain {
+    color: #ffffff;
+    background-color: #DB7A12 !important;
+    z-index: 2;
+    height: auto;
+    padding: 7% 0 5% 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#aboutH1 {
+    height: auto;
+    width: auto;
+    margin-left: 5%;
+    text-align: left;
+}
+
+#aboutText {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutText div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding-right: 5%;
+    margin-left: 5%;
+}
+
+.pt-5 {
+    font-family: -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: calc(0.9vw + 0.9vh + 0.5vmin);
+    text-align: justify;
+}
+
+#aboutImg {
+    max-width: 70%;
+    width: 66%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 990px) {
+    #aboutH1 {
+        height: auto;
+        max-width: 40%;
+        margin-top: 5%;
+        padding-left: 5%;
+    }
+
+    #aboutText {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #aboutText {
+        width: 100%;
+        font-size: 20px;
+        padding: 0px;
+        flex-direction: column-reverse;
+    }
+
+    div p {
+        font-size: 4.1vw;
+    }
+
+    #aboutImg {
+        width: 70%;
+    }
+
+    #aboutAbout {
+        margin-bottom: 5%;
+    }
+}

@@ -5,87 +5,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Suvidha Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/signup.css">
+
 </head>
 
 <body>
 
-    <a href="index.html" class="text-right home-icon mx-4 p-1">
-        <i class="bi bi-house-fill"></i>
-    </a>
+    <section id="title">
 
-    <div class="login-page" id="login-page">
-        <div class="form form-login w-75" id="form-login">
-            <div class="login-form">
-                <div class="login text-center">
-                    <div class="login-header">
-                        <h3>LOGIN</h3>
-                        <p>Please enter your credentials to login.</p>
+        <!-- NAV BAR -->
+
+        <header class="header">
+            <nav class="navbar">
+                <a href="#" class="nav-logo">Suvidha Foundation</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Register</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <img class="profile" src="images/profile.png" alt="">
+                    </li>
+                </ul>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        <hr>
+        <br>
+        <!-- LOGIN FORM -->
+
+        <div class="col-md-5 mx-auto">
+            <div class="card card-body">
+                <h1 class="text-center">Login </h1>
+                <form id="submitForm" action="/login" method="post" data-parsley-validate=""
+                    data-parsley-errors-messages-disabled="true" novalidate="" _lpchecked="1">
+                    <input type="hidden" name="_csrf" value="7635eb83-1f95-4b32-8788-abec2724a9a4">
+                    <div class="form-group required">
+                        <lSabel for="username">Username / Email</lSabel>
+                        <input type="text" class="form-control text-lowercase" id="username" required="" name="username"
+                            value="">
                     </div>
-                </div>
-                <div class="text-center d-flex justify-content-center align-items-center">
-                    <form class="login-form w-75">
-                        <input class="rounded" type="text" placeholder="username" />
-                        <input class="rounded" type="password" placeholder="password" />
-                        <button class="rounded">login</button>
-                        <p class="message">Not registered? <a href="#" onclick="showSignUpForm()">Create an account</a>
-                        </p>
-                    </form>
-                </div>
+                    <div class="form-group required">
+                        <lSabel for="username">Password</lSabel>
+                        <input type="password" class="form-control text-lowercase" id="password" required=""
+                            name="username" value="">
+                    </div>
+                    <div class="form-group mt-4 mb-4">
+                        <a class="ml-auto border-link small-xl" href="/forget-password">Forget
+                            password?</a></label>
+                    </div>
+                    <div class="form-group pt-1">
+                        <button class="btn btn-primary btn-block" type="submit">Log In</button>
+                    </div>
+
+                </form>
+                <p class="small-xl pt-3 text-center">
+                    <span class="text-muted">Not a member?</span>
+                    <a href="/signup">Register</a>
+                </p>
             </div>
         </div>
-
-            <div class="form signup-form w-75 d-none" id="form-signup">
-                <div class="login text-center">
-                    <div class="login-header">
-                        <h3>Sign Up</h3>
-                        <p>Please enter your details to signup.</p>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                    <form class="login-form w-75">
-                        <p>First name:</p>
-                        <input class="rounded" type="text" placeholder="First name" />
-                        <p>Last name :</p>
-                        <input class="rounded" type="text" placeholder="Last name" />
-                        <p>Contact No :</p>
-                        <input class="rounded" type="text" placeholder="Contact No" />
-                        <p>Email Address :</p>
-                        <input class="rounded" type="email" placeholder="Email Address" />
-                        <p>Gender :</p>
-
-                        <label for="male">Male
-                            <input type="radio" id="male" name="gender" value="M">
-                        </label>
-
-                        <label for="female">Female
-                            <input type="radio" id="female" name="gender" value="F">
-                        </label>
-
-                        <p for="dob">Date of Birth :</p>
-                        <input type="date" id="dob" name="dob">
-
-                        <button class="rounded">Sign up</button>
-                        <p class="message"><a href="#" onclick="backToLoginForm()"><i
-                                    class="bi bi-arrow-left fa-4x mx-2"></i>Back to login</a>
-                        </p>
-                    </form>
-                </div>
-            </div>
+       <!-- section for navbar, make it responsive for different size screen -->
+    </section>
 
 
-    </div>
+    <!-- mention the required sections -->
 
+    <footer id="footer">
 
-    <script src="js/login.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-        crossorigin="anonymous"></script>
+        <!-- section for the footer -->
+
+    </footer>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

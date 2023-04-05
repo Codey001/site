@@ -64,7 +64,7 @@ a {
 }
 
 .nav-link {
-    font-size: 1.6rem;
+    font-size: 2.0rem;
     font-weight: 400;
     color: #19BF19;
 }
@@ -313,6 +313,11 @@ a {
   
   /* Footer Right */
   
+  .footer-logo
+  {
+    padding-bottom: 2.4rem;
+  }
+
   .footer .footer-right {
     width: 20%;
   }

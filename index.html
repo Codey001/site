@@ -55,19 +55,19 @@
     <!-- Landing page -->
     <section class="landing">
         <div>
-            landing Page section
+            Landing Page section
         </div>
     </section>
 
     <!-- About us section -->
-    <section class="AboutUs">
+    <section class="AboutUs reveal">
         <div id="aboutMain">
             <div id="aboutAbout">
-                <img id="aboutH1" src="images/About.svg" />
+                <h1>About</h1>
             </div>
             <div id="aboutText" s>
                 <div>
-                    <p class="pt-5">
+                    <p class="pt-5 reveal">
                         Suvidha Mahila Mandal is a non-profit organization working to impart education among the financially
                          challenged sections to help them realize parity in education and strength of little minds in building
                           a promising future. The organization has provisions of student internships, student mentorship and the 
@@ -75,7 +75,7 @@
                           innovative education that stays with the students forever and equip them for the unforeseen future. 
                     </p>
                 </div>
-                <div id="aboutImg" class="pt-5">
+                <div id="aboutImg" class="pt-5 reveal">
                     <img src="images/grp 1.png" alt="" style="height: auto; max-width: 100%" />
                 </div>
             </div>
@@ -128,8 +128,8 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer-left">
+    <footer class="footer reveal">
+        <div class="footer-left reveal">
             <img class="nav-logo" src="images/SuvidhaLogo.png" alt="logo">
             <p class="footer-links"><a href="index.html" class="link-1">Home</a>
             <a href="#">About</a>
@@ -138,10 +138,14 @@
             </p>
             <p class="copyright"><a href="index.html">Suvidha Foundation</a> &copy; 2023. All rights reserverd.</p>
         </div>
-        <div class="footer-center">
+        <div class="footer-center reveal">
             <div>
                 <i class="fa fa-map-marker"></i>
+<<<<<<< HEAD
                 <p class="text">H.No.1951,W.N.4,Khaperkheda,<br>Saoner, Nagpur</p>
+=======
+                <p><span>H.No. 1951, W.N.4, Khaperkheda,</span> Saoner, Nagpur</p>
+>>>>>>> 5ce4bd27c325454a06ad07e92c4373ac391f15a9
             </div>
 
             <div>
@@ -153,7 +157,7 @@
                 <p class="text"><a href="mailto:info@suvidhafoundationedutech.org">info@suvidhafoundationedutech.org</a></p>
             </div>
         </div>
-        <div class="footer-right">
+        <div class="footer-right reveal">
             <img class="nav-logo footer-logo" src="images/SuvidhaLogo.png" alt="logo">
             <div class="footer-company-about">
                 <p>Suvidha Mahila Mandal is a non-profit organization working to impart education among the financially challenged sections to help them realize parity in education and strength of little minds in building a promising future. The organization has provisions of student internships, student mentorship and the scope to volunteer .Through these programmes, the organization aims to achieve the vision of imparting innovative education that stays with the students forever and equip them for the unforeseen future.</p>
@@ -181,6 +185,26 @@
         <!-- section for the footer -->
     </footer>
     <script src="js/index.js"></script>
+    <script type = "text/javascript">
+        window.addEventListener('scroll', reveal);
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i=0;i<reveals.length;i++){
+                
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealpoint < windowheight-revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>

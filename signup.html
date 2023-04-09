@@ -1,53 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sign Up Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+     <style>
+         p{background-image: url(C:\Users\Shristi\Downloads\suv.jpg);}
+     </style>
+    <link rel="stylesheet" href="signUpCss.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">Sign Up</h1>
+      <form action="#">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">Full Name</label>
+            <input type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter Full Name"/>
+          </div>
+          <div class="user-input-box">
+            <label for="username">Username</label>
+            <input type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter Username"/>
+          </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Email"/>
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="Enter Phone Number"/>
+          </div>
+          <div class="user-input-box">
+            <label for="password">Password</label>
+            <input type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter Password"/>
+          </div>
+          <div class="user-input-box">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Confirm Password"/>
+          </div>
+        </div>
+        
+        <form action="/action_page.php">
+          <label for="Gender">Gender</label>
+          <select name="Gender" id="Gender">
+            <option value="FEMALE">FEMALE</option>
+            <option value="MALE">MALE</option>
+            <option value="PREFER NOT SAY">PREFER NOT SAY</option>
+           
+          </select>
+        <div class="form-submit-btn">
+          <input type="submit" value="Sign Up">
+        </div>
+        
+        <div class="login-link">
+          Already a member? <a href="#">Login now</a>
+      </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up</title>
-    <link rel="stylesheet" href="./css/signup.css">
-</head>
-
-<body>
-    <div class="container home-container">
-
-        <form id="signup" class="form" type="submit"  action="./index.html">
-            <div class="signin">
-                <div class="form-field">
-                    <Label for="firstName">First name </Label>
-                    <input type="text" name="firstName" id="firstName" placeholder="first name" autocomplete="off">
-                    <small></small>
-                </div>
-                <div class="form-field">
-                    <Label for="lastName">Last name </Label>
-                    <input type="text" name="lastName" id="lastName" placeholder="last name" autocomplete="off">
-                    <small></small>
-                </div>
-
-                <div class="form-field"><label for="userName">User name</label>
-                    <input type="text" name="userName" id="userName" placeholder="user name" autocomplete="off">
-                    <small></small>
-                </div>
-                <div class="form-field"><Label for="email">Email Id </Label>
-                    <input type="email" name="email" id="email" placeholder="name@domain.country" autocomplete="off">
-                    <small></small>
-                </div>
-                <div class="form-field">
-                    <label for="password"> Password </Label>
-                    <input type="password" name="password" id="password" placeholder="********" autocomplete="off">
-                    <small></small>
-                </div>
-                <div class="form-field"><Label for="confirm-password">Confirm Password </Label>
-                    <input type="password" name="confirm-password" id="confirm-password" placeholder="********" autocomplete="off">
-                    <small></small>
-                </div>
-                <p>If you already had a account? <a href="#login">Login</a></p>
-                <button type="submit">Sign up</button>
-            </div>
-        </form>
+      <div class="login-link">
+        <h2 class="hr-lines">
+        Or Sign Up with</h2>  
+        
     </div>
-    <script type="text/javascript" src="./js/submit.js"></script>
-</body>
+      <div class="col">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i>  Facebook
+        </a>
+        <br>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i>  Twitter
+        </a>
+        <br>
 
+        <a href="#" class="google btn">
+          <i class="fa fa-google fa-fw"></i>  Google
+        </a>
+        <br>
+      </div>
+      </form>
+    </div>
+  </body>
 </html>

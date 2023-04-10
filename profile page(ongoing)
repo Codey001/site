@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suvida Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section id="title">
+
+        <!-- NAV BAR -->
+        
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="rounded m-1 p-2">Home</a>
+            <a href="#news" class="rounded m-1 p-2">News</a>
+            <a href="#contact" class="rounded m-1 p-2">Contact</a>
+            <a href="#about" class="rounded m-1 p-2">About</a>
+            <a href="#user" class="active rounded m-1 p-2">Your Profile</a>
+            
+            <a href="login.html" class="border rounded m-2 p-2" style="float: right;">Login/Signup</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="images/ham.svg" height="15" width="20" alt="">
+            </a>
+
+        </div>
+  <section style="background-color: #eee;">
+     <div class="container py-5">
+      <div class="row">
+        <div class="col">
+         
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card mb-4">
+            <div class="card-body text-center">
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <div id="profile-container">
+                  <image id="profileImage" src="http://lorempixel.com/100/100" />
+                </div>
+                <input id="imageUpload" type="file" 
+                    name="profile_photo" placeholder="Photo" required="" capture>
+                
+                <h5 class="my-3"class="login-form w-75"></h5>
+             
+              
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-lg-8">
+          <div class="card mb-4">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Full Name </p>
+                </div>
+                <div class="col-sm-9">
+                  <input class="rounded" type="text">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Email</p>
+                </div>
+                <div class="col-sm-9">
+                  <input class="rounded" type="email">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Phone</p>
+                </div>
+                <div class="col-sm-9">
+                  <input class="rounded" type="text">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Mobile</p>
+                </div>
+                <div class="col-sm-9">
+                  <input class="rounded" type="text">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Address</p>
+                </div>
+                <div class="col-sm-9">
+                  <input class="rounded" type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

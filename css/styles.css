@@ -585,21 +585,44 @@ a {
   margin-top: 25px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 880px) {
-  .footer .footer-left,
-  .footer .footer-center,
-  .footer .footer-right {
-    display: block;
+@media (max-width: 950px) {
+  .footer-content{
     width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
+    padding: 30px 40px 40px 35px ;
   }
-
-  .footer .footer-center i {
-    margin-left: 0;
+  .footer-content .footer-right{
+   width: 75%;
+   margin-left: 55px;
   }
+  .footer-content .footer-right .footer-company-about p{
+    font-size: small;
+  }
+}
+@media (max-width: 820px) {
+  .footer-content{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .footer-content{
+    flex-direction: column-reverse;
+  }
+ .footer-content .footer-center{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .footer-content .footer-center::before{
+   display: none;
+ }
+ .footer-content .footer-right{
+   width: 100%;
+   margin-left: 0;
+ }
+ .footer-content .footer-right .footer-company-about p{
+  font-size: small;
+ }
 }
 
 .social-buttons {
